@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+
+.buttonAndLinkStyle {
+    box-shadow: 0 5px 4px 0 #B28100;
+    padding: 1rem 6rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0 #B28100, 2px -2px 0 #B28100, -2px 2px 0 #B28100, -2px -2px 0 #B28100, 2px 0px 0 #B28100, 0px 2px 0 #B28100, -2px 0px 0 #B28100, 0px -2px 0 #B28100;
+    color: #ffffff;
+    background-color: var(--yellow);
+    text-wrap: nowrap;
+    width: 95%;
+    max-width: 400px;
+}
+.buttonAndLinkStyle:active{
+    box-shadow: 0 0 4px 0 #222222;
+}

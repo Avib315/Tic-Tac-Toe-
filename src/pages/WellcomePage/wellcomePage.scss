@@ -1,0 +1,124 @@
+:root {
+    --up: -20vh
+}
+
+.WellcomePage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+
+
+    .tic-tac-toe {
+        position: absolute;
+        top: -130vh;
+        pointer-events: none;
+        color: var(--yellow);
+        transform: translate(0, var(--up));
+        font-size: 4.8rem;
+        text-shadow: -3px -1px 7px rgb(0, 0, 0), 1px 1px 5px rgb(0, 0, 0);
+        animation-duration: 9s;
+        animation-timing-function: ease;
+        z-index: -1;
+        animation-iteration-count: infinite;
+        animation-name: fallDownleft;
+    }
+
+    :nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    :nth-child(2) {
+        font-size: 10rem;
+        animation-delay: 2s;
+    }
+
+    :nth-child(3) {
+        font-size: 4rem;
+        animation-delay: 5s;
+    }
+
+    :nth-child(4) {
+        animation-delay: 7s;
+        animation-name: circleBigFall;
+    }
+
+    :nth-child(5) {
+        font-size: 2rem;
+        animation-delay: 4s;
+
+    }
+
+    :nth-child(6) {
+        font-size: 5rem;
+        animation-delay: 16s;
+
+    }
+
+    :nth-child(7) {
+        font-size: 14rem;
+        animation-delay: 3.1s;
+    }
+
+    :nth-child(8) {
+        font-size: 3rem;
+        animation-delay: 12s;
+
+    }
+
+    :nth-child(odd) {
+        animation-name: circleBigFall;
+    }
+
+
+
+}
+
+@keyframes fallDownleft {
+    0% {
+        transform: translate(0, var(--up)), rotate(0deg);
+        opacity: 3;
+    }
+
+    60% {
+        transform: translate(-5rem, 230vh) rotate(180deg);
+        opacity: 0;
+    }
+
+    90% {
+        transform: translate(0, var(--up));
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, var(--up));
+        opacity: .5;
+    }
+}
+
+@keyframes circleBigFall {
+    0% {
+        transform: translate(0, var(--up)), scale(0);
+        opacity: 3;
+    }
+
+    60% {
+        transform: translate(-5rem, 230vh) scale(1.8);
+        opacity: 0;
+    }
+
+    90% {
+        transform: translate(0, var(--up));
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, var(--up));
+        opacity: .5;
+    }
+}

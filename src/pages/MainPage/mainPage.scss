@@ -1,0 +1,17 @@
+@import "../../index.scss";
+@import "../../responsive.scss";
+.MainPage{
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 200px;
+    align-items: center;
+}
+}
