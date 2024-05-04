@@ -1,0 +1,27 @@
+.XOComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+  .spanText {
+    color: var(--yellow);
+    font-size: inherit;
+    background-image: linear-gradient(to bottom, #fcd015 50%, #fbb500 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+  }
+  .spanText::first-letter{
+    border-radius: 4px;
+  }
+  .shadow {
+    position: absolute;
+    color: transparent;
+    font-size: inherit;
+    text-shadow: 3px 4px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000;
+    z-index: 1;
+    text-shadow: 3px 4px 0 #000000, 2px -2px 0 #000000, -6px -1px 0 #000000, -9px -1px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000;
+    
+  }
+}

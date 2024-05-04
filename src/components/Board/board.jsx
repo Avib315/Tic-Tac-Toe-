@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "./board.scss"
 import createBoard from "../../functions/boardCreator"
+import { Box } from "../Box/box"
 export const Board = () => {
     const [boxs, setBoxs] = useState(createBoard())
     const [turn, setTurn] = useState(0)
@@ -11,7 +12,7 @@ export const Board = () => {
     }
     return (
         <div className="Borad">
-            {boxs.arr.map(b => <div key={"box-" + b} className="emptyBox" onClick={()=>{clickHendler(b)}} >{boxs[b].input}</div>)}
+            {boxs.arr.map(b => <Box key={"box-" + b} disable={!true} value={boxs[b].input} clickEvent={()=>{clickHendler(b)}} />)}
         </div>
     )
 }

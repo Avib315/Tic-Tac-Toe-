@@ -3,7 +3,7 @@
 
 .buttonAndLinkStyle {
     box-shadow: 0 5px 4px 0 #B28100;
-    padding: 1rem 6rem;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -16,6 +16,7 @@
     background-color: var(--yellow);
     text-wrap: nowrap;
     width: 95%;
+    border: none;
     max-width: 400px;
 }
 .buttonAndLinkStyle:active{
