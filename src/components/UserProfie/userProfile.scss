@@ -1,0 +1,58 @@
+.UserProfile {
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  img {
+    object-fit: contain;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+  }
+  p.containerText {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: .7rem;
+    margin-block: 0;
+    div {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      width: 90%;
+      height: 100%;
+      span.xoContainer {
+        font-size: 3rem;
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+      }
+      .winsContainer {
+        position: absolute;
+        color: #fff;
+        width: 100%;
+        font-size: 0.7rem;
+        top: 60%;
+        transform: translateY(-50%);
+        padding: 8px 2px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        border-radius: 0 5px 5px 0;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .userName {
+    margin-block: 0;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+      -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000;
+  }
+}
