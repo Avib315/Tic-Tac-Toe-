@@ -1,0 +1,18 @@
+.titleHolder {
+  background-color: #fcd015;
+  width: 100%;
+  height: 10vh;
+  // transform: rotate(-2deg); /* Tilt the box */
+  position: relative;
+
+  .titleHolderChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b28100;
+    transform: rotate(-2deg); /* Counter-tilt the background */
+    z-index: -1; /* Place the background behind the yellow box */
+  }
+}
