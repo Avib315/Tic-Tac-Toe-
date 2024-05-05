@@ -1,7 +1,10 @@
 .titleHolder {
   background-color: #fcd015;
   width: 100%;
+  display: flex;
   height: 10vh;
+  justify-content: space-evenly;
+  align-items: flex-end;
   // transform: rotate(-2deg); /* Tilt the box */
   position: relative;
 

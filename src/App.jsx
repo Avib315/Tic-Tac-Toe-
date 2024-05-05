@@ -8,6 +8,7 @@ import { LobbyPage } from "./pages/LobbyPage/lobbyPage";
 import { CreateNewGamePage } from "./pages/CreateNewGamePage/createNewGamePage";
 import { ChoosePlayerPage } from "./pages/ChoosePlayerPage/choosePlayerPage";
 import { WatingForGame } from "./pages/WatingForGame/watingForGame";
+import { WinningPage } from "./pages/WinningPage/winningPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/solo-game" element={<GamePage />} />
           <Route path="/create-game" element={<CreateNewGamePage />} />
           <Route path="/waiting-for-game" element={<WatingForGame />} />
+          <Route path="/winning-game" element={<WinningPage />} />
         </Routes>
       </div>
     </>
