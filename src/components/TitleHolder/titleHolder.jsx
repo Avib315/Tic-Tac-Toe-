@@ -1,9 +1,10 @@
 import "./titleHolder.scss";
 
-export const TitleHolder = ({ childern }) => {
+export const TitleHolder = ({ children }) => {
   return (
     <div className="titleHolder">
-      <div className="titleHolderChild">{childern}</div>
+      {children}
+      <div className="titleHolderChild"></div>
     </div>
   );
 };
