@@ -12,7 +12,7 @@
     position: relative;
     overflow: hidden;
     flex-direction: column;
-
+    max-width: 100% !important;
 
     .tic-tac-toe {
         position: absolute;

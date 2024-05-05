@@ -11,7 +11,7 @@ export const ChoosePlayerPage = ({ }) => {
             <Title text="choose player"/>
             <div className="containerBox">
                 <Box value="X" style={style}/>
-                <Box value="O" style={style}/>
+                <Box value="O" style={style} disable={true}/>
             </div>
             <div className="buttonContainer">
             <Button type="link" to="/solo-game" text={"lets play"}/>

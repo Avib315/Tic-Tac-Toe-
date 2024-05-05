@@ -1,0 +1,31 @@
+.CodeDisplay {
+  box-shadow: -1px 1px 1px 2px #000000;
+  border: 2px solid #000000;
+  max-width: 400px;
+  height: 100px;
+  width: 90%;
+  background-color: #ffffff;
+  text-transform: capitalize;
+  position: relative;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000;  
+      color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+
+        margin-block:0 ;
+    }
+  p.title {
+    position: absolute;
+    top: -12%;
+    font-size: 1.3rem;
+  }
+  p.codeP{
+    color: #cdcdcd;
+    font-size: 3rem;
+    letter-spacing: 1.2rem;
+}
+}
