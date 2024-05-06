@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    TIC TAC TOE
+  </body>
+  <script>
+    let winner = false;
+    let start = 1;
+    const arrOfBoard = [
+      [{ symbol: "" }, { symbol: "" }, { symbol: "" }],
+      [{ symbol: "" }, { symbol: "" }, { symbol: "" }],
+      [{ symbol: "" }, { symbol: "" }, { symbol: "" }],
+    ];
+    const whosTurn = () => {
+      const turn = start % 2 == 0 ? "O" : "X";
+      start++;
+      return turn;
+    };
+    const locationPlace = ({ arr = 0, index = 0 }) => {
+      arrOfBoard[arr][index].symbol = whosTurn();
+    };
+    const printArr = () => {
+      let finallPrint = "";
+      arrOfBoard.forEach((arrIn) => {
+        arrIn.forEach((obj) => {
+          let space = obj.symbol ? "" : " ";
+          finallPrint += obj.symbol + space + "| ";
+        });
+        finallPrint += "\n";
+      });
+      console.log(finallPrint);
+    };
+    printArr();
+    const checkWinner = () => {
+      if (start < 5) return;
+    };
+    while (!winner) {
+      let objPrompt = {};
+      objPrompt.arr = prompt("enter row number between 0 - 2");
+      objPrompt.index = prompt("enter row index between 0 - 2");
+      locationPlace(objPrompt);
+      printArr();
+    }
+  </script>
+</html>

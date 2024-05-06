@@ -2,22 +2,23 @@
   font-family: LuckiestGuy;
   src: url(./assets/fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf);
 }
-:root{
-  --yellow:#FCD015;
-  --blue:#3D7AD6;
-  --grey:#D1D1D1;
-  --azur:#C9F9FC;
+:root {
+  --yellow: #fcd015;
+  --blue: #3d7ad6;
+  --grey: #d1d1d1;
+  --azur: #c9f9fc;
 }
-
 
 a {
   font-weight: 500;
   text-decoration: none;
 }
-a:hover , button:hover , input[type="submit"]{
+a:hover,
+button:hover,
+input[type="submit"] {
   cursor: pointer;
 }
-*{
+* {
   font-family: LuckiestGuy;
   box-sizing: border-box;
 }
@@ -28,4 +29,6 @@ body {
 h1 {
   font-size: 3.2em;
 }
-
+p {
+  margin-block: 0;
+}

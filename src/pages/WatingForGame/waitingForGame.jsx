@@ -1,10 +1,10 @@
 import { BackButton } from "../../components/BackButton/backButton";
 import Loading from "../../components/Loading/loading";
-import "./watingForGame.scss";
+import "./waitingForGame.scss";
 
-export const WatingForGame = ({}) => {
+export const WaitingForGame = ({}) => {
   return (
-    <div className="watingForGame">
+    <div className="waitingForGame">
       <BackButton />
       <div className="loadingAndText">
         <Loading />
